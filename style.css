@@ -75,7 +75,7 @@ header nav ul li:hover::after{
     left: 50%;
     transform: translate(-50%, -50%);
     filter: blur(50px);
-    z-index: 1;
+    z-index: 0;
     animation: pulse 4s infinite alternate;
 }
 
@@ -197,7 +197,7 @@ header nav ul li:hover::after{
     font-size: 1.1rem;
     color: #b8b8d0;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     max-width: 600px;
     
     /* Animação*/
@@ -221,6 +221,8 @@ header nav ul li:hover::after{
     font-weight: 600;
     cursor: pointer;
     border: none;
+    z-index: 5;
+   
     
     /* Animação*/
     transform: translateX(300px);
@@ -232,11 +234,13 @@ header nav ul li:hover::after{
 .active .btn{
     transform: translateX(0);
     opacity: 1;
+    
 }
 .btn:hover {
     border: white solid;
     transition: 0.1s;
     color: white;
+    
 }
 
 .arrows{
